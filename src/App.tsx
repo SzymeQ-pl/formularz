@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "src/assets/App.css";
 
 type FormDataType = {
   imie: string;
