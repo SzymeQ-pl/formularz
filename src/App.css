@@ -5,7 +5,7 @@ body, html {
   height: 100%;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  background: linear-gradient(135deg, #d4f1c5 0%, #a8e6a3 100%); /* delikatny zielony gradient */
 }
 
 .App {
@@ -31,7 +31,7 @@ body, html {
   width: 400px;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -39,21 +39,21 @@ body, html {
 .form input {
   padding: 12px 15px;
   font-size: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid #b2d8b2;
   border-radius: 12px;
   outline: none;
   transition: all 0.2s;
 }
 
 .form input:focus {
-  border-color: #6c5ce7;
-  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+  border-color: #2ecc71; /* zielony akcent przy focusie */
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
 }
 
 .form button {
   padding: 12px 20px;
   font-size: 16px;
-  background-color: #6c5ce7;
+  background-color: #2ecc71; /* zielony przycisk */
   color: white;
   border: none;
   border-radius: 12px;
@@ -62,9 +62,9 @@ body, html {
 }
 
 .form button:hover {
-  background-color: #5a4bcf;
+  background-color: #27ae60;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
 }
 
 .table {
@@ -72,7 +72,7 @@ body, html {
   border-collapse: collapse;
   width: 600px;
   background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -84,14 +84,14 @@ body, html {
 }
 
 .table th {
-  background-color: #6c5ce7;
+  background-color: #2ecc71; /* zielone nagłówki */
   color: white;
 }
 
 .table tr:nth-child(even) {
-  background-color: rgba(108, 92, 231, 0.05);
+  background-color: rgba(46, 204, 113, 0.1);
 }
 
 .table tr:hover {
-  background-color: rgba(108, 92, 231, 0.15);
+  background-color: rgba(46, 204, 113, 0.2);
 }
