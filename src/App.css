@@ -71,6 +71,7 @@ body, html {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  color: black;
 }
 
 .table th, .table td {
