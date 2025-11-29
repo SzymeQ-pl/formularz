@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 
-import baner from "./baner.svg";
-
 export default function App() {
   type FormItem = { imie: string; nazwisko: string; ulica: string; miasto: string };
   const [items, setItems] = useState<FormItem[]>([]);
@@ -22,7 +20,8 @@ export default function App() {
 
   return (
     <>
-      <img src={baner} alt="Baner" style={{ width: "100%", marginBottom: 20 }} />
+      {/* Obrazek musi być w folderze public/baner.svg */}
+      <img src="/baner.svg" alt="Baner" style={{ width: "100%", marginBottom: 20 }} />
       <div style={{ margin: 20 }}>
         <form
           onSubmit={handleSubmit}
