@@ -2,11 +2,13 @@ import { useState } from "react";
 import "./App.css";
 
 export default function App() {
-  const [items, setItems] = useState([]);
+  type FormItem = { imie: string; nazwisko: string; ulica: string; miasto: string };
+  const [items, const formData = raw as FormItem;
+    setItems] = useState<FormItem[]>([]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = Object.fromEntries(new FormData(e.currentTarget));
+    const raw = Object.fromEntries(new FormData(e.currentTarget));
     setItems((prev) => [...prev, formData]);
     e.currentTarget.reset();
   };
