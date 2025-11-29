@@ -1,3 +1,4 @@
+/* App.css */
 body, html {
   margin: 0;
   padding: 0;
@@ -18,26 +19,23 @@ body, html {
 }
 
 .banner {
-  max-width: 300px;
+  max-width: 600px;
   width: 80%;
   margin-bottom: 40px;
 }
 
 .form {
   display: flex;
-  flex-direction: collumn;
+  flex-direction: column;
   gap: 20px;
-  width: 80%;
-  max-width: 300px;
-  padding: 20px;
+  width: 400px; /* szerokość formularza */
+  padding: 30px;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  justify-content: space-between;
 }
 
 .form input {
-  flex: 1;
   padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -51,10 +49,10 @@ body, html {
 }
 
 .form button {
-  padding: 12px 25px;
+  padding: 12px 20px;
   font-size: 16px;
   background-color: #007bff;
-  color: black;
+  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -68,8 +66,7 @@ body, html {
 .table {
   margin-top: 40px;
   border-collapse: collapse;
-  width: 80%;
-  max-width: 1200px;
+  width: 600px; /* szerokość tabeli dopasowana do formularza */
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -83,7 +80,7 @@ body, html {
 
 .table th {
   background-color: #007bff;
-  color: black;
+  color: white;
 }
 
 .table tr:nth-child(even) {
