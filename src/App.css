@@ -25,10 +25,10 @@ body, html {
 
 .form {
   display: flex;
-  flex-direction: row;
+  flex-direction: collumn;
   gap: 20px;
   width: 80%;
-  max-width: 1200px;
+  max-width: 300px;
   padding: 20px;
   background-color: #fff;
   border-radius: 12px;
