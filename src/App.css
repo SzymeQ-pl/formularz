@@ -3,6 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
 }
@@ -12,31 +13,33 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
+  height: 100vh;
+  width: 100vw;
   box-sizing: border-box;
 }
 
 .banner {
-  max-width: 400px;
-  width: 100%;
-  margin-bottom: 30px;
+  max-width: 800px;
+  width: 80%;
+  margin-bottom: 40px;
 }
 
 .form {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 400px;
+  flex-direction: row;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
   background-color: #fff;
-  padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  justify-content: space-between;
 }
 
 .form input {
-  padding: 10px 15px;
+  flex: 1;
+  padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -49,7 +52,7 @@ body, html {
 }
 
 .form button {
-  padding: 12px;
+  padding: 12px 25px;
   font-size: 16px;
   background-color: #007bff;
   color: white;
@@ -64,18 +67,18 @@ body, html {
 }
 
 .table {
-  margin-top: 30px;
+  margin-top: 40px;
   border-collapse: collapse;
-  width: 100%;
-  max-width: 600px;
+  width: 80%;
+  max-width: 1200px;
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .table th, .table td {
-  padding: 12px 15px;
+  padding: 15px 20px;
   text-align: left;
 }
 
