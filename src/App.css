@@ -1,11 +1,11 @@
-
+/* App.css */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
 }
 
 .App {
@@ -30,48 +30,52 @@ body, html {
   gap: 20px;
   width: 400px;
   padding: 30px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .form input {
   padding: 12px 15px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
   outline: none;
-  transition: border-color 0.2s;
+  transition: all 0.2s;
 }
 
 .form input:focus {
-  border-color: #007bff;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
 }
 
 .form button {
   padding: 12px 20px;
   font-size: 16px;
-  background-color: green;
-  color: black;
+  background-color: #6c5ce7;
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
 }
 
 .form button:hover {
-  background-color: #0056b3;
+  background-color: #5a4bcf;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
 }
 
 .table {
   margin-top: 40px;
   border-collapse: collapse;
   width: 600px;
-  background-color: #fff;
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  color: black;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .table th, .table td {
@@ -80,10 +84,14 @@ body, html {
 }
 
 .table th {
-  background-color: green;
-  color: black;
+  background-color: #6c5ce7;
+  color: white;
 }
 
 .table tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: rgba(108, 92, 231, 0.05);
+}
+
+.table tr:hover {
+  background-color: rgba(108, 92, 231, 0.15);
 }
