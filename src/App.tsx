@@ -19,40 +19,38 @@ export default function App() {
   };
 
   return (
-    <div className="page-wrapper">
-      <div className="container">
-        <img src="/baner.svg" alt="Baner" className="banner" />
-        <form onSubmit={handleSubmit} className="form">
-          <input name="imie" placeholder="Imię" />
-          <input name="nazwisko" placeholder="Nazwisko" />
-          <input name="ulica" placeholder="Ulica" />
-          <input name="miasto" placeholder="Miasto" />
-          <button type="submit">Prześlij</button>
-        </form>
+    <div className="App">
+      <img src="/baner.svg" alt="Baner" className="banner" />
+      <form onSubmit={handleSubmit} className="form">
+        <input name="imie" placeholder="Imię" />
+        <input name="nazwisko" placeholder="Nazwisko" />
+        <input name="ulica" placeholder="Ulica" />
+        <input name="miasto" placeholder="Miasto" />
+        <button type="submit">Prześlij</button>
+      </form>
 
-        {items.length > 0 && (
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Imię</th>
-                <th>Nazwisko</th>
-                <th>Ulica</th>
-                <th>Miasto</th>
+      {items.length > 0 && (
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Imię</th>
+              <th>Nazwisko</th>
+              <th>Ulica</th>
+              <th>Miasto</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((row, i) => (
+              <tr key={i}>
+                <td>{row.imie}</td>
+                <td>{row.nazwisko}</td>
+                <td>{row.ulica}</td>
+                <td>{row.miasto}</td>
               </tr>
-            </thead>
-            <tbody>
-              {items.map((row, i) => (
-                <tr key={i}>
-                  <td>{row.imie}</td>
-                  <td>{row.nazwisko}</td>
-                  <td>{row.ulica}</td>
-                  <td>{row.miasto}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-      </div>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }
