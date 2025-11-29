@@ -16,7 +16,6 @@ export default function App() {
     };
     setItems((prev) => [...prev, formDataObj]);
     e.currentTarget.reset();
-  }();
   };
 
   return (
