@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <>
-      <img src="/baner.svg" alt="Baner" style={{ width: "100%", marginBottom: 20 }} />
+      <img src="formularz/baner.svg" alt="Baner" style={{ width: "100%", marginBottom: 20 }} />
       <div style={{ margin: 20 }}>
         <form
           onSubmit={handleSubmit}
