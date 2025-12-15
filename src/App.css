@@ -12,6 +12,15 @@
 
   box-sizing: border-box;
 }
+body, html 
+{ 
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  width: 100%; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background: linear-gradient(135deg, #d4f1c5 0%, #a8e6a3 100%);
+}
 .banner { 
   max-width: 600px; 
   width: 80%; 
