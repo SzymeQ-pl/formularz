@@ -20,6 +20,7 @@ export default function App() {
 
   return (
     <div className="App">
+       <header className="header">React</header>
       <img src="/baner.svg" alt="Baner" className="banner" />
       <form onSubmit={handleSubmit} className="form">
         <input name="imie" placeholder="Imię" />
@@ -51,6 +52,7 @@ export default function App() {
           </tbody>
         </table>
       )}
+      <footer className="stopka">React</footer>
     </div>
   );
 }
