@@ -52,7 +52,7 @@ export default function App() {
           </tbody>
         </table>
       )}
-      <footer className="stopka">React</footer>
+      <footer className="stopka">15.12.2025</footer>
     </div>
   );
 }
